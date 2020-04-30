@@ -12,6 +12,7 @@ def cliente() -> None:
         socket_instance.send(mensagem.encode())
       except KeyboardInterrupt:
         print('fechado')
+        exit(0)
         break
     socket_instance.close()
   except Exception :
